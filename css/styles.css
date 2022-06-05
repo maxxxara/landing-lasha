@@ -394,7 +394,7 @@ header {
 }
 .features__info {
 	margin-top: 30px;
-	padding: 0 24px;
+	width: 88%;
 }
 .features__info-item {
 	color: #fff;
