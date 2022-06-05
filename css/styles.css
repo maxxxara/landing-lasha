@@ -153,7 +153,7 @@ header {
 	font-size: 14px;
 }
 .sale__texts p {
-	font-family: "HelveticaBold"
+	font-family: "HelveticaBold";
 	margin-top: -8px;
     position: relative;
     top: 10px;
@@ -447,7 +447,7 @@ header {
 .features__arrow {
 	z-index: 10;
 	position: absolute;
-	bottom: 0;
+	bottom: -1px;
 	width: 48px;
 	background: #b2b2b2;
 	margin-bottom: 4px;
