@@ -6,18 +6,22 @@
 	font-family: HelveticaMedium;
 	src: url(../fonts/helvetica-medium.otf);
 }
+@font-face {
+	font-family: HelveticaRegular;
+	src: url(../fonts/helvatica-normal.otf);
+}
 
 
 body {
 	margin: 0;
 	padding: 0;
 	background: #ccc;
-	font-family: "Arial";
+	font-family: "HelveticaRegular";
 }
 body * {
 	margin: 0;
 	padding: 0;
-	font-family: "Arial";
+	font-family: "HelveticaRegular";
 }
 .frame {
 	background-color: #f4f6f9;
@@ -52,12 +56,14 @@ header {
 	align-items: center;
 }
 .header__text p {
-	font-family: "HelveticaMedium";
+	font-family: "HelveticaRegular";
 	text-align: center;
 	font-size: 9px;
 	margin-RIGHT: 10px;
 }
-
+.header__text img{
+	width: 16px;
+}
 
 
 .hero {
@@ -71,7 +77,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	font-size: 20px;
-	background: linear-gradient( -360deg, rgb(249,17,85) 20%, rgba(255,35,35,0) 500%);
+	background: linear-gradient(#f91155, #ff2323);
 }
 .hero__header p{
 	font-family: "HelveticaBold";
@@ -103,7 +109,7 @@ header {
 	align-items: center;
 	padding: 0 23px;
 	position: relative;
-
+	padding-right: 48px;
 }
 .time {
 }
@@ -112,7 +118,7 @@ header {
 	display: flex;
 }
 .time span {
-	font-family: "HelveticaMedium";
+	font-family: "HelveticaRegular";
 	font-size: 12px;
 }
 .timer__cont {
@@ -135,6 +141,7 @@ header {
 .sale__line {
 	width: 1px;
 	height: 67px;
+	margin-left: -20px;
 	background: #474e5a;
 }
 
@@ -142,16 +149,29 @@ header {
 	margin-left: -14px;
 }
 .sale__texts span {
-	font-family: "HelveticaMedium";
+	font-family: "HelveticaRegular";
 	font-size: 12px;
 }
 .sale__texts p {
-	margin-top: -14px;
+	margin-top: -8px;
     position: relative;
     top: 10px;
 	font-size: 39px;
 	color: #fbf10f;
 	font-weight: 800;
+}
+@media only screen and (max-width: 372px) {
+	.sale__line {
+		margin-left: -10px;
+	}
+	.sake__content {
+		padding-left: 23px;
+	}
+}
+@media only screen and (max-width: 350px) {
+	.sale__line {
+		display: none;
+	}
 }
 
 
@@ -183,7 +203,7 @@ header {
 	
 }
 .form__sale-old span {
-	font-family: "HelveticaMedium";
+	font-family: "HelveticaRegular";
 	margin-top: -4px;
 	font-size: 12px;
 }
@@ -197,7 +217,7 @@ header {
 	
 }
 .form__sale-new span {
-	font-family: "HelveticaMedium";
+	font-family: "HelveticaRegular";
 	font-size: 12px;
 }
 .form__sale-new p {
@@ -246,7 +266,7 @@ header {
 	font-family: "HelveticaBold";
 }
 .form__texts-desc {
-	font-family: "HelveticaMedium";
+	font-family: "HelveticaRegular";
 	margin-top: 4px;
 	font-size: 12px;
 }
@@ -274,7 +294,7 @@ header {
 	width: 100%;
 	height: 60px;
     box-sizing: border-box;
-    font-family: "HelveticaMedium";
+    font-family: "HelveticaRegular";
 	border-radius: 4px;
 	border: 0;
 	font-size: 11px;
@@ -285,14 +305,15 @@ header {
 	margin-bottom: 10px;
 }
 .form__item button {
-	font-family: "HelveticaMedium";
+	font-family: "HelveticaBold";
 	font-size: 15px;
 	width: 100%;
 	height: 60px;
 	border-radius: 4px;
 	border: 0;
 	font-weight: 600;
-	background: linear-gradient( -360deg, rgb(249,17,85) 20%, rgba(255,35,35,0) 500%);
+	background: #cf0700;
+	box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
 	color: #fff;
 }
 .form__footer {
@@ -300,7 +321,7 @@ header {
 	margin-top: 14px;
 }
 .form__footer p {
-	font-family: "HelveticaMedium";
+	font-family: "HelveticaRegular";
 	font-size: 10px;
 	color: rgb(136, 136, 136);
 }
@@ -337,7 +358,7 @@ header {
 	width: 95%;
 }
 .product__desc {
-	font-family: "HelveticaMedium";
+	font-family: "HelveticaRegular";
 	padding: 0 25px;
 	font-size: 13px;
 	color: rgb(7, 19, 35);
@@ -350,6 +371,10 @@ header {
 	width: 100%;
 	background: #161f2e;
 	margin-top: 44px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 .features__title {
 	font-family: "HelveticaBold";
@@ -360,12 +385,12 @@ header {
 }
 .features__image {
 	margin-top: 28px;
-	width: 100%;
+	width: 90%;
 	text-align: center;
 	position: relative;
 }
 .features__image-img {
-	width: 90%;
+	width: 100%;
 }
 .features__info {
 	margin-top: 30px;
@@ -384,12 +409,17 @@ header {
 	margin-top: 0;
 }
 .features__item-name {
-	font-family: "HelveticaMedium";
+	display: flex;
+	font-family: "HelveticaRegular";
 	font-size: 14px;
+}
+.features__item-name img {
+	width: 12px;
+	margin-right: 6px
 }
 .features__item-desc {
 	text-align: right;
-	font-family: "HelveticaMedium";
+	font-family: "HelveticaRegular";
 	font-size: 14px;
 	width: 200px;
 }
@@ -401,7 +431,7 @@ header {
 	width: 100%;
 }
 .features__button button{
-	font-family: "HelveticaMedium";
+	font-family: "HelveticaBold";
 	color: #fff;
 	font-size: 16px;
 	width: 70%;
@@ -409,25 +439,24 @@ header {
 	border-radius: 4px;
 	border: 0;
 	font-weight: 600;
-	background: linear-gradient( -360deg, rgb(249,17,85) 20%, rgba(255,35,35,0) 500%);
+	
+	background: #cf0700;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .features__arrow {
 	z-index: 10;
 	position: absolute;
 	bottom: 0;
-	width: 24px;
+	width: 48px;
 	background: #b2b2b2;
-	padding: 12px;
 	margin-bottom: 4px;
 }
 .features__arrow-left {
 	left: 0;
-	margin-left: 20px;
+	transform: rotate(180deg);
 }
 .features__arrow-right {
 	right: 0;
-	margin-right: 20px;
-
 }
 
 
@@ -458,8 +487,8 @@ header {
 	padding-bottom: 20px;
 }
 .comment__text {
-	font-family: "HelveticaMedium";
-	font-size: 10px;
+	font-family: "HelveticaRegular";
+	font-size: 12px;
 	color: rgb(11, 11, 11);
 	font-weight: 600;
 	margin-bottom: 30px;
@@ -503,19 +532,18 @@ header {
 	font-size: 12px;
 }
 .comment__user-city {
-	font-family: "HelveticaMedium";
+	font-family: "HelveticaRegular";
 	font-size: 10px;
 }
 .comment__arrow {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	background: #ff0000;
 	border-radius: 1000px;
-	padding: 6px;
+	/*padding: 6px;*/
 }
 .comment__arrow img {
-	width: 14px;
+	width: 30px;
 }
 .comment__arrow-right {
 	right: -14px;
@@ -525,6 +553,7 @@ header {
 	margin-left: 4px;
 }
 .comment__arrow-left img {
+	transform: rotate(180deg);
 	margin-top: 2px;
 	margin-right: 2px;
 } 
@@ -561,7 +590,7 @@ header {
 	width: 100px;
 }
 .faq__item-title {
-	font-family: "HelveticaMedium";
+	font-family: "HelveticaRegular";
 	width: 150px;
 	font-size: 12px;
 	color: rgb(29, 29, 29);
@@ -583,7 +612,7 @@ footer {
 	padding-bottom: 10px;
 }
 footer p{
-	font-family: "HelveticaMedium";
+	font-family: "HelveticaRegular";
 	margin-top: 18px;
 	font-size: 11px;
 	color: rgb(51, 51, 51);
@@ -596,7 +625,7 @@ footer li {
 	margin-top: 6px;
 }
 footer a {
-	font-family: "HelveticaMedium";
+	font-family: "HelveticaRegular";
 	font-size: 11px;
 	color: rgb(51, 51, 51);
 }
