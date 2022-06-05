@@ -168,10 +168,11 @@ header {
 .sale__texts span {
 	font-family: "HelveticaRegular";
 	font-size: 14px;
+	margin-left: 4px;
 }
 .sale__texts p {
 	font-family: "HelveticaBold";
-	left: 4px;
+	left: 8px;
 	margin-top: -8px;
     position: relative;
     top: 10px;
@@ -228,7 +229,7 @@ header {
 	font-size: 14px;
 }
 .form__sale-old p {
-	margin-top: 4px;
+	margin-top: 2px;
 	font-size: 24px;
 	font-weight: 600;
 	font-family: "HelveticaMedium";
@@ -241,14 +242,16 @@ header {
 .form__sale-new span {
 	font-family: "HelveticaRegular";
 	font-size: 14px;
+	margin-left: 2px;
 }
 .form__sale-new p {
-	margin-top: 4px;
+	margin-left: 2px;
+	margin-top: 2px;
 	font-size: 28px;
 	font-family: "HelveticaBold";
 	color: #fbf10f;
 	position: relative;
-	left: 6px;
+	left: 8px;
 }
 
 .form__sale-row {
@@ -352,9 +355,8 @@ header {
 }
 .cl-yl {
 	color: #fbf10f;
-	font-weight: 700;
+	font-size: 15px;
 }
-
 
 
 
@@ -668,4 +670,9 @@ footer a {
 	.form__sale-new {
 		margin-right: -40px;
 	}*/
+}
+
+.l {
+	font-size: 17px;
+	font-family: "HelveticaBold";
 }
