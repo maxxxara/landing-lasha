@@ -537,7 +537,7 @@ header {
 .comment__user {
 	justify-content: center;
 	display: flex;
-	margin-top: 30px;
+	margin-top: 32px;
 	padding-bottom: 20px;
 }
 .comment__user-avatar {
