@@ -1,3 +1,13 @@
+@font-face {
+	font-family: HelveticaBold;
+	src: url(../fonts/helvetica-bold.otf);
+}
+@font-face {
+	font-family: HelveticaMedium;
+	src: url(../fonts/helvetica-medium.otf);
+}
+
+
 body {
 	margin: 0;
 	padding: 0;
@@ -10,7 +20,7 @@ body * {
 	font-family: "Arial";
 }
 .frame {
-	background-color: #fff;
+	background-color: #f4f6f9;
 	position: relative;
 	top: 50%;
 	left: 50%;
@@ -42,9 +52,9 @@ header {
 	align-items: center;
 }
 .header__text p {
-	font-weight: 600;
+	font-family: "HelveticaMedium";
 	text-align: center;
-	font-size: 11px;
+	font-size: 9px;
 	margin-RIGHT: 10px;
 }
 
@@ -60,10 +70,11 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 24px;
+	font-size: 20px;
 	background: linear-gradient( -360deg, rgb(249,17,85) 20%, rgba(255,35,35,0) 500%);
 }
 .hero__header p{
+	font-family: "HelveticaBold";
 	margin-top: -4px;
 }
 .hero__image {
@@ -92,6 +103,7 @@ header {
 	align-items: center;
 	padding: 0 23px;
 	position: relative;
+
 }
 .time {
 }
@@ -100,8 +112,8 @@ header {
 	display: flex;
 }
 .time span {
-	font-weight: 600;
-	font-size: 14px;
+	font-family: "HelveticaMedium";
+	font-size: 12px;
 }
 .timer__cont {
 	font-weight: 700;
@@ -130,8 +142,8 @@ header {
 	margin-left: -14px;
 }
 .sale__texts span {
-	font-weight: 600;
-	font-size: 14px;
+	font-family: "HelveticaMedium";
+	font-size: 12px;
 }
 .sale__texts p {
 	margin-top: -14px;
@@ -171,9 +183,9 @@ header {
 	
 }
 .form__sale-old span {
+	font-family: "HelveticaMedium";
 	margin-top: -4px;
-	font-weight: 600;
-	font-size: 14px;
+	font-size: 12px;
 }
 .form__sale-old p {
 	margin-top: 4px;
@@ -185,8 +197,8 @@ header {
 	
 }
 .form__sale-new span {
-	font-weight: 600;
-	font-size: 14px;
+	font-family: "HelveticaMedium";
+	font-size: 12px;
 }
 .form__sale-new p {
 	font-size: 28px;
@@ -231,8 +243,10 @@ header {
 }
 .form__texts-title {
 	font-size: 20px;
+	font-family: "HelveticaBold";
 }
 .form__texts-desc {
+	font-family: "HelveticaMedium";
 	margin-top: 4px;
 	font-size: 12px;
 }
@@ -260,10 +274,10 @@ header {
 	width: 100%;
 	height: 60px;
     box-sizing: border-box;
+    font-family: "HelveticaMedium";
 	border-radius: 4px;
 	border: 0;
-	font-size: 12px;
-	font-weight: 600;
+	font-size: 11px;
 	padding-left: 38px;
 }
 .form__item:nth-child(2) {
@@ -271,7 +285,8 @@ header {
 	margin-bottom: 10px;
 }
 .form__item button {
-	font-size: 17px;
+	font-family: "HelveticaMedium";
+	font-size: 15px;
 	width: 100%;
 	height: 60px;
 	border-radius: 4px;
@@ -285,9 +300,9 @@ header {
 	margin-top: 14px;
 }
 .form__footer p {
+	font-family: "HelveticaMedium";
 	font-size: 10px;
 	color: rgb(136, 136, 136);
-	font-weight: 600;
 }
 .cl-yl {
 	color: #fbf10f;
@@ -301,7 +316,8 @@ header {
 	width: 100%;
 }
 .product__title {
-	margin-top: 38px;
+	font-family: "HelveticaBold";
+	margin-top: 36px;
 	text-align: center;
 	font-size: 24px;
 	color: rgb(7, 19, 35);
@@ -321,11 +337,11 @@ header {
 	width: 95%;
 }
 .product__desc {
+	font-family: "HelveticaMedium";
 	padding: 0 25px;
-	font-size: 14px;
+	font-size: 13px;
 	color: rgb(7, 19, 35);
-	font-weight: 600;
-	padding-bottom: 48px;
+	padding-bottom: 30px;
 }
 
 
@@ -336,10 +352,10 @@ header {
 	margin-top: 44px;
 }
 .features__title {
+	font-family: "HelveticaBold";
 	text-align: center;
-	font-size: 24px;
+	font-size: 22px;
 	color: #fff;
-	font-weight: 700;
 	padding-top: 44px;
 }
 .features__image {
@@ -368,8 +384,13 @@ header {
 	margin-top: 0;
 }
 .features__item-name {
+	font-family: "HelveticaMedium";
+	font-size: 14px;
 }
 .features__item-desc {
+	text-align: right;
+	font-family: "HelveticaMedium";
+	font-size: 14px;
 	width: 200px;
 }
 .features__button {
@@ -380,8 +401,9 @@ header {
 	width: 100%;
 }
 .features__button button{
+	font-family: "HelveticaMedium";
 	color: #fff;
-	font-size: 17px;
+	font-size: 16px;
 	width: 70%;
 	height: 60px;
 	border-radius: 4px;
@@ -417,6 +439,7 @@ header {
 	margin-top: 40px;
 }
 .comments__title {
+	font-family: "HelveticaBold";
 	padding-top: 40px;
 	margin-bottom: 32px;
 	text-align: center;
@@ -435,7 +458,8 @@ header {
 	padding-bottom: 20px;
 }
 .comment__text {
-	font-size: 12px;
+	font-family: "HelveticaMedium";
+	font-size: 10px;
 	color: rgb(11, 11, 11);
 	font-weight: 600;
 	margin-bottom: 30px;
@@ -475,9 +499,11 @@ header {
 	font-weight: 600;
 }
 .comment__user-name {
-	font-size: 14px;
+	font-family: "HelveticaMedium";
+	font-size: 12px;
 }
 .comment__user-city {
+	font-family: "HelveticaMedium";
 	font-size: 10px;
 }
 .comment__arrow {
@@ -510,6 +536,7 @@ header {
 .faq {
 }
 .faq__title {
+	font-family: "HelveticaBold";
 	padding-top: 44px;
 	margin-bottom: 32px;
 	font-size: 24px;
@@ -534,11 +561,13 @@ header {
 	width: 100px;
 }
 .faq__item-title {
+	font-family: "HelveticaMedium";
 	width: 150px;
-	font-size: 14px;
+	font-size: 12px;
 	color: rgb(29, 29, 29);
 	font-weight: 700;
 	text-align: center;
+	margin-top: 14px;
 }
 .faq__item:nth-child(2) {
 	margin-top: -10px;
@@ -554,10 +583,10 @@ footer {
 	padding-bottom: 10px;
 }
 footer p{
-	margin-top: 14px;
-	font-size: 12px;
+	font-family: "HelveticaMedium";
+	margin-top: 18px;
+	font-size: 11px;
 	color: rgb(51, 51, 51);
-	font-weight: 600;
 }
 footer ul {
 	margin-top: 20px;
@@ -567,7 +596,7 @@ footer li {
 	margin-top: 6px;
 }
 footer a {
-	font-size: 12px;
+	font-family: "HelveticaMedium";
+	font-size: 11px;
 	color: rgb(51, 51, 51);
-	font-weight: 600;
 }
