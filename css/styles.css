@@ -10,6 +10,14 @@
 	font-family: HelveticaRegular;
 	src: url(../fonts/helvatica-normal.otf);
 }
+@font-face {
+	font-family: HelveticaBoldCaps;
+	src: url(../fonts/helvetica-bold-caps.otf);
+}
+@font-face {
+	font-family: HelveticaMediumCaps;
+	src: url(../fonts/helvatica-medium-caps.otf);
+}
 
 
 body {
@@ -102,26 +110,32 @@ header {
 	background: #161f2e;
 }
 .sale__content {
-	height: 92px; 
 	color: #fff;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 23px;
+	padding: 16px 23px;
 	position: relative;
-	padding-right: 48px;
+	padding-rifght: 48px;
 }
 .time {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 .timer {
-	margin-top: 16px;
+	margin-top: 14px;
 	display: flex;
 }
 .time span {
 	font-family: "HelveticaRegular";
 	font-size: 14px;
+	margin-left: -17px;
 }
 .timer__cont {
+	font-family: "HelveticaBold";
 	font-weight: 700;
 	height: 26px;
 	width: 37px;
@@ -134,18 +148,21 @@ header {
 	border-radius: 2px;
 }
 .timer__dots {
-	margin: 0 6px;
+	margin: 0 9px;
 	font-size: 20px;
 }
 
 .sale__line {
 	width: 1px;
 	height: 67px;
-	margin-left: -20px;
+	/*margin-left: -20px;*/
 	background: #474e5a;
 }
 
 .sale__texts {
+	text-align: center;
+	width: 40%;
+	margin-top: -6px;
 	margin-left: -14px;
 }
 .sale__texts span {
@@ -154,6 +171,7 @@ header {
 }
 .sale__texts p {
 	font-family: "HelveticaBold";
+	left: 4px;
 	margin-top: -8px;
     position: relative;
     top: 10px;
@@ -166,7 +184,7 @@ header {
 		margin-left: -10px;
 	}
 	.sale__content {
-		padding: 0 23px;
+		padding: 16px 23px;
 	}
 }
 @media only screen and (max-width: 350px) {
@@ -198,10 +216,11 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 52px;
+	/*padding: 0 52px;*/
 }
 .form__sale-old {
-	
+	width: 50%;
+	text-align: center;
 }
 .form__sale-old span {
 	font-family: "HelveticaRegular";
@@ -216,16 +235,20 @@ header {
 	text-decoration: line-through;
 }
 .form__sale-new {
-	
+	width: 50%;
+	text-align: center;
 }
 .form__sale-new span {
 	font-family: "HelveticaRegular";
 	font-size: 14px;
 }
 .form__sale-new p {
+	margin-top: 4px;
 	font-size: 28px;
 	font-family: "HelveticaBold";
 	color: #fbf10f;
+	position: relative;
+	left: 6px;
 }
 
 .form__sale-row {
@@ -315,7 +338,7 @@ header {
 	border: 0;
 	font-weight: 600;
 	background: #cf0700;
-	box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
+	box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
 	color: #fff;
 }
 .form__footer {
@@ -339,7 +362,7 @@ header {
 	width: 100%;
 }
 .product__title {
-	font-family: "HelveticaBold";
+	font-family: "HelveticaBoldCaps";
 	margin-top: 36px;
 	text-align: center;
 	font-size: 24px;
@@ -378,7 +401,7 @@ header {
 	flex-direction: column;
 }
 .features__title {
-	font-family: "HelveticaBold";
+	font-family: "HelveticaBoldCaps";
 	text-align: center;
 	font-size: 24px;
 	color: #fff;
@@ -442,7 +465,7 @@ header {
 	font-weight: 600;
 	
 	background: #cf0700;
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
 }
 .features__arrow {
 	z-index: 10;
@@ -469,7 +492,7 @@ header {
 	margin-top: 40px;
 }
 .comments__title {
-	font-family: "HelveticaBold";
+	font-family: "HelveticaBoldCaps";
 	padding-top: 40px;
 	margin-bottom: 32px;
 	text-align: center;
@@ -543,6 +566,13 @@ header {
 	border-radius: 1000px;
 	/*padding: 6px;*/
 }
+.comment_end {
+	position: absolute;
+	bottom: -14px;
+	left: 35%;
+	fill: #fff;
+	transform: rotate(180deg);
+}
 .comment__arrow img {
 	width: 30px;
 }
@@ -566,7 +596,7 @@ header {
 .faq {
 }
 .faq__title {
-	font-family: "HelveticaBold";
+	font-family: "HelveticaBoldCaps";
 	padding-top: 44px;
 	margin-bottom: 32px;
 	font-size: 24px;
@@ -632,10 +662,10 @@ footer a {
 }
 
 @media only screen and (max-width: 340px) {
-	.form__sale-old {
+	/*.form__sale-old {
 		margin-left: -20px;
 	}
 	.form__sale-new {
 		margin-right: -40px;
-	}
+	}*/
 }
