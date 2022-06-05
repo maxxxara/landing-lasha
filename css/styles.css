@@ -42,7 +42,7 @@ header {
 	align-items: center;
 }
 .header__text p {
-	width: 72px;
+	font-weight: 600;
 	text-align: center;
 	font-size: 11px;
 	margin-RIGHT: 10px;
@@ -91,6 +91,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 23px;
+	position: relative;
 }
 .time {
 }
@@ -126,6 +127,7 @@ header {
 }
 
 .sale__texts {
+	margin-left: -14px;
 }
 .sale__texts span {
 	font-weight: 600;
@@ -243,7 +245,16 @@ header {
 	width: 100%;
 }
 .form__item {
+	position: relative;
 	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.form__item img {
+	padding-left: 16px;
+	width: 15px;
+	height: 16px;
+	position: absolute;
 }
 .form__item input {
 	width: 100%;
@@ -253,7 +264,7 @@ header {
 	border: 0;
 	font-size: 12px;
 	font-weight: 600;
-	padding-left: 20px;
+	padding-left: 38px;
 }
 .form__item:nth-child(2) {
 	margin-top: 8px;
